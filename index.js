@@ -1,9 +1,22 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+const reverdWord = reverse(word);
+return word === reverdWord
 }
+
+function reverse(word){
+  return word.split("").reverse().join("")
+}
+
+//a function reverse that takes in a word, returns the word then splits into its letters,
+//reverses the order, and joins them. 
+//call is palindrome function 
+
 
 /* 
   Add your pseudocode here
+  if the word is the same as the word in reverse, It should return true 
+  reverse the input string 
+  if the input is the same as the reversed input return true else return false 
 */
 
 /*
@@ -23,3 +36,4 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
